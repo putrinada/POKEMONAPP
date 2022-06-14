@@ -14,17 +14,19 @@
         android:theme="@style/Theme.POKEMONAPP">
         <activity
             android:name=".SplashActivity"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.pokelist.MainActivity"
             android:exported="true">
         </activity>
+
 
     </application>
 
