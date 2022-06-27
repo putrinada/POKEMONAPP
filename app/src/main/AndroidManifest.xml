@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.POKEMONAPP">
         <activity
+            android:name=".ui.pokeinfo.PokeInfoActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
@@ -21,13 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ui.pokelist.MainActivity"
-            android:exported="true">
-        </activity>
-
-
+            android:exported="true" />
     </application>
 
 </manifest>

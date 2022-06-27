@@ -1,6 +1,8 @@
-package com.adl.pokemonapp.model.api
+package com.adl.pokemonapp.domain
 
 
+import com.adl.pokemonapp.model.api.PokemonApiResult
+import com.adl.pokemonapp.model.api.PokemonsApiResult
 import com.adl.pokemonapp.service.PokemonService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

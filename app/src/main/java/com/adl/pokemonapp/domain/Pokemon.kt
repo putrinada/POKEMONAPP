@@ -1,11 +1,10 @@
 package com.adl.pokemonapp.domain
 
 
-
 data class Pokemon(
     val number: Int,
     val name: String,
- //   val types: List<PokemonType>
+    //   val types: List<PokemonType>
 ) {
     val formattedName = name.capitalize()
 

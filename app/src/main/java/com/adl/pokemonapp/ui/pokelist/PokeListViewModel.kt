@@ -3,12 +3,13 @@ package com.adl.pokemonapp.ui.pokelist
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.adl.pokemonapp.domain.Pokemon
-import com.adl.pokemonapp.model.api.PokemonRepository
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+import com.adl.pokemonapp.domain.PokemonRepository
+import com.adl.pokemonapp.model.api.PokemonApiResult
+import com.adl.pokemonapp.model.api.PokemonsApiResult
+import com.adl.pokemonapp.service.PokemonService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+
 
 class PokeListViewModel() : ViewModel() {
     var pokemons = MutableLiveData<List<Pokemon?>>()
@@ -34,9 +35,9 @@ class PokeListViewModel() : ViewModel() {
                     Pokemon(
                         pokemonApiResult.id,
                         pokemonApiResult.name
-                      //  pokemonApiResult.types.map { type ->
+                        //  pokemonApiResult.types.map { type ->
                         //    type.type
-                       // }
+                        // }
                     )
                 }
             })
